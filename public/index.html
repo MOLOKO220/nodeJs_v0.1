@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Investment accounts</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="shortcut icon"
+            href="img/first-item.svg"
+            type="image/x-icon"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <!-- попап -->
+        <div class="popup-wrapp display__none">
+            <form action="#">
+                <div class="form-popup-wrapp">
+                    <h3>To get more information, please fill out this form:</h3>
+                    <div class="form-popup-points">
+                        <div class="form-popup-first-point">1</div>
+                        <div class="form-popup-midl-point"></div>
+                        <div class="form-popup-second-point">2</div>
+                    </div>
+
+                    <div class="form-popup-input-wrapp">
+                        <h6>Name</h6>
+                        <div class="form-popup-input">
+                            <input type="text" id="Name" placeholder="Name" />
+                        </div>
+                    </div>
+
+                    <div class="form-popup-input-wrapp">
+                        <h6>Last name</h6>
+                        <div class="form-popup-input">
+                            <input
+                                type="text"
+                                id="LastName"
+                                placeholder="Last name"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form-popup-input-wrapp">
+                        <h6>Phone</h6>
+                        <div class="form-popup-input">
+                            <input type="text" id="Phone" />
+                        </div>
+                    </div>
+
+                    <div class="form-popup-input-wrapp">
+                        <h6>Email</h6>
+                        <div class="form-popup-input">
+                            <input type="text" id="Email" placeholder="" />
+                        </div>
+                    </div>
+
+                    <div class="form-popup-input-wrapp">
+                        <h6>Country</h6>
+                        <select
+                            class="form-country__input"
+                            id="countryInp"
+                            type="text"
+                        >
+                            <option id="countryRemuv">Country</option>
+                            <option value="Afghanistan" class="+93">
+                                Afghanistan
+                            </option>
+                            <option value="Albania" class="+355">
+                                Albania
+                            </option>
+                            <option value="Andorra" class="+376">
+                                Andorra
+                            </option>
+                            <option value="Angola" class="+244">Angola</option>
+                            <option value="Algeria" class="+21">Algeria</option>
+                            <option value="Argentina" class="+54">
+                                Argentina
+                            </option>
+                            <option value="Armenia" class="+374">
+                                Armenia
+                            </option>
+                            <option value="Australia" class="+61">
+                                Australia
+                            </option>
+                            <option value="Austria" class="+43">Austria</option>
+                            <option value="Azerbaijan" class="+994">
+                                Azerbaijan
+                            </option>
+                            <option value="Bahamas" class="+1-242">
+                                Bahamas
+                            </option>
+                            <option value="Bangladesh" class="+880">
+                                Bangladesh
+                            </option>
+                            <option value="Barbados" class="+1-246">
+                                Barbados
+                            </option>
+                            <option value="Bahrain" class="+973">
+                                Bahrain
+                            </option>
+                            <option value="Belgium" class="+32">Belgium</option>
+                            <option value="Belize" class="+501">Belize</option>
+                            <option value="Benin" class="+229">Benin</option>
+                            <option value="Belarus" class="+375">
+                                Belarus
+                            </option>
+                            <option value="Burma" class="+95">Burma</option>
+                            <option value="Bolivia" class="+591">
+                                Bolivia
+                            </option>
+                            <option value="Bosnia and Herzegovina" class="+387">
+                                Bosnia and Herzegovina
+                            </option>
+                            <option value="Botswana" class="+267">
+                                Botswana
+                            </option>
+                            <option value="Brazil" class="+55">Brazil</option>
+                            <option value="Brunei" class="+673">Brunei</option>
+                            <option value="Bulgaria" class="+359">
+                                Bulgaria
+                            </option>
+                            <option value="Burkina Faso" class="+226">
+                                Burkina Faso
+                            </option>
+                            <option value="Burundi" class="+257">
+                                Burundi
+                            </option>
+                            <option value="Bhutan" class="+975">Bhutan</option>
+                            <option value="Cape Verde" class="+238">
+                                Cape Verde
+                            </option>
+                            <option value="Cambodia" class="+855">
+                                Cambodia
+                            </option>
+                            <option value="Cameroon" class="+237">
+                                Cameroon
+                            </option>
+                            <option value="Canada" class="+1">Canada</option>
+                            <option value="Chad" class="+235">Chad</option>
+                            <option value="Chile" class="+56">Chile</option>
+                            <option value="China" class="+86">China</option>
+                            <option value="Cyprus" class="+357">Cyprus</option>
+                            <option value="Colombia" class="+57">
+                                Colombia
+                            </option>
+                            <option value="Comoros" class="+269">
+                                Comoros
+                            </option>
+                            <option value="Costa Rica" class="+506">
+                                Costa Rica
+                            </option>
+                            <option value="Croatia" class="+385">
+                                Croatia
+                            </option>
+                            <option value="Cuba" class="+53">Cuba</option>
+                            <option value="Denmark" class="+45">Denmark</option>
+                            <option value="Dominica" class="+1-767">
+                                Dominica
+                            </option>
+                            <option value="Ecuador" class="+593">
+                                Ecuador
+                            </option>
+                            <option value="Egypt" class="+20">Egypt</option>
+                            <option value="United Arab Emirates" class="+971">
+                                United Arab Emirates
+                            </option>
+                            <option value="Eritrea" class="+291">
+                                Eritrea
+                            </option>
+                            <option value="South Korea" class="+82">
+                                South Korea
+                            </option>
+                            <option value="Slovakia" class="+421">
+                                Slovakia
+                            </option>
+                            <option value="Slovenia" class="+386">
+                                Slovenia
+                            </option>
+                            <option value="Spain" class="+34">Spain</option>
+                            <option value="Saudi Arabia" class="+966">
+                                Saudi Arabia
+                            </option>
+                            <option value="U.S" class="+1">U.S</option>
+                            <option value="Estonia" class="+372">
+                                Estonia
+                            </option>
+                            <option value="Ethiopia" class="+251">
+                                Ethiopia
+                            </option>
+                            <option value="Finland" class="+358">
+                                Finland
+                            </option>
+                            <option value="Fiji" class="+679">Fiji</option>
+                            <option value="France" class="+33">France</option>
+                            <option value="Gabon" class="+241">Gabon</option>
+                            <option value="Gambia" class="+220">Gambia</option>
+                            <option value="Georgia" class="+995">
+                                Georgia
+                            </option>
+                            <option value="Ghana" class="+233">Ghana</option>
+                            <option value="Germany" class="+49">Germany</option>
+                            <option value="Pomegranate" class="">
+                                Pomegranate
+                            </option>
+                            <option value="Greece" class="+30">Greece</option>
+                            <option value="Guatemala" class="+502">
+                                Guatemala
+                            </option>
+                            <option value="Guyana" class="+592">Guyana</option>
+                            <option value="Guinea" class="+675">Guinea</option>
+                            <option value="Equatorial Guinea" class="+240">
+                                Equatorial Guinea
+                            </option>
+                            <option value="Guinea-Bissau" class="+245">
+                                Guinea-Bissau
+                            </option>
+                            <option value="Haiti" class="+509">Haiti</option>
+                            <option value="Honduras" class="+504">
+                                Honduras
+                            </option>
+                            <option value="Hungary" class="+36">Hungary</option>
+                            <option value="India" class="+91">India</option>
+                            <option value="Indonesia" class="+62">
+                                Indonesia
+                            </option>
+                            <option value="Iraq" class="+964">Iraq</option>
+                            <option value="Ivory Coast" class="+225">
+                                Ivory Coast
+                            </option>
+                            <option value="Iran" class="+98">Iran</option>
+                            <option value="Ireland" class="+353">
+                                Ireland
+                            </option>
+                            <option value="Iceland" class="+354">
+                                Iceland
+                            </option>
+                            <option value="Marshall Islands" class="+692">
+                                Marshall Islands
+                            </option>
+                            <option value="Solomon Islands" class="+677">
+                                Solomon Islands
+                            </option>
+                            <option value="Israel" class="+972">Israel</option>
+                            <option value="Italy" class="+39">Italy</option>
+                            <option value="Jamaica" class="+1-876">
+                                Jamaica
+                            </option>
+                            <option value="Japan" class="+81">Japan</option>
+                            <option value="Jordan" class="+962">Jordan</option>
+                            <option value="Kazakhstan" class="+7">
+                                Kazakhstan
+                            </option>
+                            <option value="Kenya" class="+254">Kenya</option>
+                            <option value="Kyrgyzstan" class="+996">
+                                Kyrgyzstan
+                            </option>
+                            <option value="Kiribati" class="+686">
+                                Kiribati
+                            </option>
+                            <option value="Kuwait" class="+965">Kuwait</option>
+                            <option value="Laos" class="+856">Laos</option>
+                            <option value="Lesotho" class="+266">
+                                Lesotho
+                            </option>
+                            <option value="Latvia" class="+371">Latvia</option>
+                            <option value="Lebanon" class="+961">
+                                Lebanon
+                            </option>
+                            <option value="Liberia" class="+231">
+                                Liberia
+                            </option>
+                            <option value="Libya" class="+21">Libya</option>
+                            <option value="Liechtenstein" class="+41">
+                                Liechtenstein
+                            </option>
+                            <option value="Lithuania" class="+370">
+                                Lithuania
+                            </option>
+                            <option value="Luxembourg" class="+352">
+                                Luxembourg
+                            </option>
+                            <option value="North Macedonia" class="+389">
+                                North Macedonia
+                            </option>
+                            <option value="Madagascar" class="+261">
+                                Madagascar
+                            </option>
+                            <option value="Malaysia" class="+60">
+                                Malaysia
+                            </option>
+                            <option value="Malawi" class="+265">Malawi</option>
+                            <option value="Maldives" class="+960">
+                                Maldives
+                            </option>
+                            <option value="Mali" class="+223">Mali</option>
+                            <option value="malt" class="+356">malt</option>
+                            <option value="Morocco" class="+212">
+                                Morocco
+                            </option>
+                            <option value="Mauricio" class="">Mauricio</option>
+                            <option value="Mauritania" class="+222">
+                                Mauritania
+                            </option>
+                            <option value="Mexico" class="+52">Mexico</option>
+                            <option value="Micronesia" class="+691">
+                                Micronesia
+                            </option>
+                            <option value="Moldova" class="+373">
+                                Moldova
+                            </option>
+                            <option value="Monaco" class="+377">Monaco</option>
+                            <option value="Mongolia" class="+976">
+                                Mongolia
+                            </option>
+                            <option value="Montenegro" class="+382">
+                                Montenegro
+                            </option>
+                            <option value="Mozambique" class="+258">
+                                Mozambique
+                            </option>
+                            <option value="Namibia" class="+264">
+                                Namibia
+                            </option>
+                            <option value="Nauru" class="+674">Nauru</option>
+                            <option value="Nepal" class="+977">Nepal</option>
+                            <option value="Nicaragua" class="+505">
+                                Nicaragua
+                            </option>
+                            <option value="Niger" class="+227">Niger</option>
+                            <option value="Nigeria" class="+234">
+                                Nigeria
+                            </option>
+                            <option value="Norway" class="+47">Norway</option>
+                            <option value="North Korea" class="+850">
+                                North Korea
+                            </option>
+                            <option value="New Zealand" class="+64">
+                                New Zealand
+                            </option>
+                            <option value="Oman" class="+968">Oman</option>
+                            <option value="Netherlands" class="+31">
+                                Netherlands
+                            </option>
+                            <option value="Pakistan" class="+92">
+                                Pakistan
+                            </option>
+                            <option value="Palau" class="+680">Palau</option>
+                            <option value="Philippines" class="+63">
+                                Philippines
+                            </option>
+                            <option value="Panama" class="+507">Panama</option>
+                            <option value="Papua New Guinea" class="+675">
+                                Papua New Guinea
+                            </option>
+                            <option value="Paraguay" class="+595">
+                                Paraguay
+                            </option>
+                            <option value="Peru" class="+51">Peru</option>
+                            <option value="Poland" class="+48">Poland</option>
+                            <option value="Portugal" class="+351">
+                                Portugal
+                            </option>
+                            <option value="UK" class="+380">Ukraine</option>
+                            <option
+                                value="Central African Republic"
+                                class="+236"
+                            >
+                                Central African Republic
+                            </option>
+                            <option value="Czech Republic" class="+420">
+                                Czech Republic
+                            </option>
+                            <option value="Republic of Congo" class="+242">
+                                Republic of Congo
+                            </option>
+                            <option
+                                value="Democratic Republic of Congo"
+                                class="+243"
+                            >
+                                Democratic Republic of Congo
+                            </option>
+                            <option value="Dominican Republic" class="+1-809">
+                                Dominican Republic
+                            </option>
+                            <option value="Rwanda" class="+250">Rwanda</option>
+                            <option value="Romania" class="+40">Romania</option>
+                            <option value="Russia" class="+7">Russia</option>
+                            <option value="Samoa" class="+685">Samoa</option>
+                            <option value="Saint Kitts and Nevis" class="+1">
+                                Saint Kitts and Nevis
+                            </option>
+                            <option value="San Marino" class="+39">
+                                San Marino
+                            </option>
+                            <option
+                                value="St. Vincent and the Grenadines"
+                                class="+1"
+                            >
+                                St. Vincent and the Grenadines
+                            </option>
+                            <option value="St. Lucia" class="+1">
+                                St. Lucia
+                            </option>
+                            <option value="Sao Tome and Principe" class="+239">
+                                Sao Tome and Principe
+                            </option>
+                            <option value="Senegal" class="+221">
+                                Senegal
+                            </option>
+                            <option value="Serbia" class="+381">Serbia</option>
+                            <option value="Seychelles" class="+248">
+                                Seychelles
+                            </option>
+                            <option value="Sierra Leone" class="+232">
+                                Sierra Leone
+                            </option>
+                            <option value="Singapore" class="+65">
+                                Singapore
+                            </option>
+                            <option value="Syria" class="+963">Syria</option>
+                            <option value="Somalia" class="+252">
+                                Somalia
+                            </option>
+                            <option value="Sri Lanka" class="+94">
+                                Sri Lanka
+                            </option>
+                            <option value="Swaziland" class="+268">
+                                Swaziland
+                            </option>
+                            <option value="South Africa" class="+27">
+                                South Africa
+                            </option>
+                            <option value="Sudan" class="+249">Sudan</option>
+                            <option value="South Sudan" class="+211">
+                                South Sudan
+                            </option>
+                            <option value="Sweden" class="+46">Sweden</option>
+                            <option value="Switzerland" class="+41">
+                                Switzerland
+                            </option>
+                            <option value="Surinam" class="+597">
+                                Surinam
+                            </option>
+                            <option value="Thailand" class="+66">
+                                Thailand
+                            </option>
+                            <option value="Tanzania" class="+255">
+                                Tanzania
+                            </option>
+                            <option value="Tajikistan" class="+992">
+                                Tajikistan
+                            </option>
+                            <option value="East Timor" class="+62">
+                                East Timor
+                            </option>
+                            <option value="Togo" class="+228">Togo</option>
+                            <option value="Tonga" class="+676">Tonga</option>
+                            <option value="Trinidad and Tobago" class="+1-868">
+                                Trinidad and Tobago
+                            </option>
+                            <option value="Tunisia" class="+21">Tunisia</option>
+                            <option value="Turkmenistan" class="+993">
+                                Turkmenistan
+                            </option>
+                            <option value="Turkey" class="+90">Turkey</option>
+                            <option value="Tuvalu" class="+688">Tuvalu</option>
+                            <option value="Ukraine" class="+380">
+                                Ukraine
+                            </option>
+                            <option value="Uganda" class="+256">Uganda</option>
+                            <option value="Uruguay" class="+598">
+                                Uruguay
+                            </option>
+                            <option value="Uzbekistan" class="+998">
+                                Uzbekistan
+                            </option>
+                            <option value="Vatican City" class="+39">
+                                Vatican City
+                            </option>
+                            <option value="Vanuatu" class="+678">
+                                Vanuatu
+                            </option>
+                            <option value="Venezuela" class="+58">
+                                Venezuela
+                            </option>
+                            <option value="Vietnam" class="+84">Vietnam</option>
+                            <option value="Yemen" class="+967">Yemen</option>
+                            <option value="Djibouti" class="+253">
+                                Djibouti
+                            </option>
+                            <option value="Zambia" class="+260">Zambia</option>
+                            <option value="Zimbabwe" class="+263">
+                                Zimbabwe
+                            </option>
+                        </select>
+                    </div>
+
+                    <div
+                        class="form-popup-input-wrapp form-popup-investment-wrapp"
+                    >
+                        <h6>Value of your investment</h6>
+                        <div class="investment-input">
+                            <div class="investment-input_main">
+                                <span>> 10 K $</span>
+                                <div class="arrew-img popup-arrew-img"></div>
+                            </div>
+                            <div
+                                class="investment-input-ather-prise display__none"
+                            >
+                                <span
+                                    id="investmentIta"
+                                    class="invest10 display__none"
+                                    >> 10 K $</span
+                                >
+                                <span id="investmentIta" class="invest50"
+                                    >> 50 K $</span
+                                >
+                                <span id="investmentIta" class="invest100"
+                                    >> 100 K $</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-popup-checkbox">
+                        <input
+                            type="checkbox"
+                            id="check"
+                            class="custom-radio"
+                        />
+                        <label for="check"></label>
+                        <div>
+                            I agree to the Terms and Conditions and the Privacy
+                            Policy
+                        </div>
+                    </div>
+                    <div class="popup-form-btn">Next</div>
+                </div>
+                <div class="form-Close-btn"></div>
+            </form>
+        </div>
+
+        <div class="second-popup-wrapp display__none">
+            <div>
+                <div class="second-popup-wrapp-main">
+                    <h3>To get more information, please fill out this form:</h3>
+                    <div class="form-popup-points">
+                        <div class="form-popup-first-point">
+                            <img src="img/marter_popup2.svg" />
+                        </div>
+                        <div class="form-popup-midl-point"></div>
+                        <div class="form-popup-second-point">2</div>
+                    </div>
+                    <p class="form-popup-second-text">
+                        Please select the language you want to be contacted in:
+                    </p>
+
+                    <div
+                        class="form-popup-input-wrapp form-popup-investment-wrapp"
+                    >
+                        <div class="investment-input">
+                            <div class="Language-input_main">
+                                <span>Language</span>
+                                <div
+                                    class="arrew-img leng-popup-arrew-img"
+                                ></div>
+                            </div>
+                            <div class="diveren__Language display__none">
+                                <span id="English" class="leng-btn"
+                                    >English</span
+                                >
+                                <span id="French" class="leng-btn">French</span>
+                                <span id="Polish" class="leng-btn">Polish</span>
+                                <span id="Russian" class="leng-btn"
+                                    >Russian</span
+                                >
+                                <span id="Spanish" class="leng-btn"
+                                    >Spanish</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="English second-popup-main__banck display__none">
+                        OneSavings Bank
+                    </div>
+                    <div class="French second-popup-main__banck display__none">
+                        Credit Immobilier de France
+                    </div>
+                    <div class="Polish second-popup-main__banck display__none">
+                        RCI Banque Spółka Akcyjna Oddział w Polsce
+                    </div>
+                    <div class="Russian second-popup-main__banck display__none">
+                        PJSC Bank “ALEKSANDROVSKY”
+                    </div>
+                    <div class="Spanish second-popup-main__banck display__none">
+                        Madesant Bank
+                    </div>
+
+                    <div class="Submit-Btn">Submit</div>
+                </div>
+                <div class="closeBtn"></div>
+            </div>
+        </div>
+
+        <!-- бургер меню -->
+        <div class="burger-manu">
+            <div class="burger-manu__back-img"></div>
+            <nav>
+                <ul>
+                    <li class="scril__Btn">Home</li>
+                    <li class="scril__Btn">About</li>
+                    <li class="scril__Btn">Investment</li>
+                    <li class="scril__Btn">FAQ</li>
+                    <li class="scril__Btn">Contacts</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container">
+            <header class="header">
+                <div class="header__login">Logo</div>
+                <div class="header__nav-wrapp">
+                    <nav>
+                        <ul>
+                            <li class="scril__Btn">Home</li>
+                            <li class="scril__Btn">About</li>
+                            <li class="scril__Btn">Investment</li>
+                            <li class="scril__Btn">FAQ</li>
+                            <li class="scril__Btn">Contacts</li>
+                        </ul>
+                    </nav>
+                    <div class="header__account show-popap">Open account</div>
+                    <div class="burger-menu_btn__wrapp">
+                        <div class="burger-menu_btn"></div>
+                    </div>
+                </div>
+            </header>
+            <section class="first-section">
+                <div class="first-section__img"></div>
+                <div class="first-section__inf">
+                    <h4 class="point-title">Lorem ipsum dolor sit amet.</h4>
+                    <p>
+                        Cansectetur adipiscing elit. Dolor, eget posuere turpis
+                        sed a. Ut nunc, lobortis eu eu tempor dui tincidunt
+                        nulla blandit.
+                    </p>
+                    <div class="show-popap">Invest</div>
+                </div>
+                <div class="first-section__background"></div>
+            </section>
+
+            <section class="second-section">
+                <div class="second-section__inf">
+                    <h4 class="point-title">About</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Id tortor integer diam tempus, nullam venenatis non.
+                        Velit morbi dictumst feugiat posuere aliquam a. Ornare
+                        placerat neque pharetra dolor. Odio eget arcu sed
+                        pellentesque. Mauris mauris donec pellentesque dui.
+                        Mattis ac sed consectetur vehicula viverra morbi auctor.
+                        Interdum integer vivamus pharetra tellus imperdiet eget
+                        et. Nunc nisi, odio et odio sed iaculis. Leo consequat
+                        nec fermentum eget mauris.
+                    </p>
+                    <div class="show-popap">Explore</div>
+                </div>
+                <div class="second-section__img"></div>
+                <div class="section__background"></div>
+            </section>
+
+            <section class="third-section">
+                <div class="third-section__header">
+                    <div class="third-section__header-title point-title">
+                        Investment
+                    </div>
+                    <div class="third-section__header-subtitle">
+                        Pick one to check your eligibility
+                    </div>
+                </div>
+                <ul class="third-section__mine slider2">
+                    <li class="slider__item">
+                        <div class="third-section__mine__item">
+                            <img src="img/first-item.svg" />
+                            <p>Individual investment account</p>
+                        </div>
+                        <div class="third-section__mine__btn show-popap">
+                            Open
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <div class="third-section__mine__item">
+                            <img src="img/second-item.svg" />
+                            <p>Brokerage investment account</p>
+                        </div>
+                        <div class="third-section__mine__btn show-popap">
+                            Open
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <div class="third-section__mine__item">
+                            <img src="img/third-item.svg" />
+                            <p>Retirement investment account</p>
+                        </div>
+                        <div class="third-section__mine__btn show-popap">
+                            Open
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <div class="third-section__mine__item">
+                            <img src="img/four-item.svg" />
+                            <p>Education investment account</p>
+                        </div>
+                        <div class="third-section__mine__btn show-popap">
+                            Open
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <div class="third-section__mine__item">
+                            <img src="img/first-item.svg" />
+                            <p>Individual investment account</p>
+                        </div>
+                        <div class="third-section__mine__btn show-popap">
+                            Open
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <div class="third-section__mine__item">
+                            <img src="img/second-item.svg" />
+                            <p>Brokerage investment account</p>
+                        </div>
+                        <div class="third-section__mine__btn show-popap">
+                            Open
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <div class="third-section__mine__item">
+                            <img src="img/third-item.svg" />
+                            <p>Retirement investment account</p>
+                        </div>
+                        <div class="third-section__mine__btn show-popap">
+                            Open
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <div class="third-section__mine__item">
+                            <img src="img/four-item.svg" />
+                            <p>Education investment account</p>
+                        </div>
+                        <div class="third-section__mine__btn show-popap">
+                            Open
+                        </div>
+                    </li>
+                </ul>
+                <div class="third-section__background"></div>
+            </section>
+
+            <section class="four-section">
+                <h4 class="point-title">Reviews</h4>
+                <ul class="slider">
+                    <li class="slider__item">
+                        <img src="img/icon_first-slide.svg" />
+                        <div class="slide-inf">
+                            <div>
+                                <h6>Roman</h6>
+                            </div>
+                            <p>
+                                Aliquet bibendum tempor, quis imperdiet enim.
+                                Libero tincidunt id ultrices egestas gravida
+                                aliquet nunc. Habitasse bibendum vulputate
+                                pulvinar tellus massa bibendum proin nunc.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="slider__item">
+                        <img src="img/icon_2-slide.svg" />
+                        <div class="slide-inf">
+                            <div>
+                                <h6>Paul</h6>
+                            </div>
+                            <p>
+                                Aliquet bibendum tempor, quis imperdiet enim.
+                                Libero tincidunt id ultrices egestas gravida
+                                aliquet nunc. Habitasse bibendum vulputate
+                                pulvinar tellus massa bibendum proin nunc.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="slider__item">
+                        <img src="img/icon_3-slide.svg" />
+                        <div class="slide-inf">
+                            <div>
+                                <h6>Maria</h6>
+                            </div>
+                            <p>
+                                Aliquet bibendum tempor, quis imperdiet enim.
+                                Libero tincidunt id ultrices egestas gravida
+                                aliquet nunc. Habitasse bibendum vulputate
+                                pulvinar tellus massa bibendum proin nunc.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="slider__item">
+                        <img src="img/icon_4-slide.svg" />
+                        <div class="slide-inf">
+                            <div>
+                                <h6>Elena</h6>
+                            </div>
+                            <p>
+                                Aliquet bibendum tempor, quis imperdiet enim.
+                                Libero tincidunt id ultrices egestas gravida
+                                aliquet nunc. Habitasse bibendum vulputate
+                                pulvinar tellus massa bibendum proin nunc.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="slider__item">
+                        <img src="img/icon_5-slide.svg" />
+                        <div class="slide-inf">
+                            <div>
+                                <h6>Enriko</h6>
+                            </div>
+                            <p>
+                                Aliquet bibendum tempor, quis imperdiet enim.
+                                Libero tincidunt id ultrices egestas gravida
+                                aliquet nunc. Habitasse bibendum vulputate
+                                pulvinar tellus massa bibendum proin nunc.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="slider__item">
+                        <img src="img/icon_6-slide.svg" />
+                        <div class="slide-inf">
+                            <div>
+                                <h6>Franchesco</h6>
+                            </div>
+                            <p>
+                                Aliquet bibendum tempor, quis imperdiet enim.
+                                Libero tincidunt id ultrices egestas gravida
+                                aliquet nunc. Habitasse bibendum vulputate
+                                pulvinar tellus massa bibendum proin nunc.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="five-section">
+                <h4 class="point-title">FAQ</h4>
+                <div class="five-section-mine">
+                    <div class="five-section-mine__item">
+                        <div class="five-section-mine__item-wrapper">
+                            <div class="five-section-mine__item-btn-wrapp">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit?
+                                </p>
+                                <div class="arrew-img"></div>
+                            </div>
+                            <div
+                                class="five-section-mine__item-inf display__none"
+                            >
+                                Mi pharetra, tempor, arcu dolor tristique
+                                pharetra. Neque lobortis diam sed auctor
+                                porttitor. Ac senectus id et at odio cursus. At
+                                dolor ultricies cras aliquam etiam sit id
+                                aliquet.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="five-section-mine__item">
+                        <div class="five-section-mine__item-wrapper">
+                            <div class="five-section-mine__item-btn-wrapp">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit?
+                                </p>
+                                <div class="arrew-img"></div>
+                            </div>
+                            <div
+                                class="five-section-mine__item-inf display__none"
+                            >
+                                Mi pharetra, tempor, arcu dolor tristique
+                                pharetra. Neque lobortis diam sed auctor
+                                porttitor. Ac senectus id et at odio cursus. At
+                                dolor ultricies cras aliquam etiam sit id
+                                aliquet.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="five-section-mine__item">
+                        <div class="five-section-mine__item-wrapper">
+                            <div class="five-section-mine__item-btn-wrapp">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit?
+                                </p>
+                                <div class="arrew-img"></div>
+                            </div>
+                            <div
+                                class="five-section-mine__item-inf display__none"
+                            >
+                                Mi pharetra, tempor, arcu dolor tristique
+                                pharetra. Neque lobortis diam sed auctor
+                                porttitor. Ac senectus id et at odio cursus. At
+                                dolor ultricies cras aliquam etiam sit id
+                                aliquet.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="five-section-mine__item">
+                        <div class="five-section-mine__item-wrapper">
+                            <div class="five-section-mine__item-btn-wrapp">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit?
+                                </p>
+                                <div class="arrew-img"></div>
+                            </div>
+                            <div
+                                class="five-section-mine__item-inf display__none"
+                            >
+                                Mi pharetra, tempor, arcu dolor tristique
+                                pharetra. Neque lobortis diam sed auctor
+                                porttitor. Ac senectus id et at odio cursus. At
+                                dolor ultricies cras aliquam etiam sit id
+                                aliquet.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="five-section-mine__item">
+                        <div class="five-section-mine__item-wrapper">
+                            <div class="five-section-mine__item-btn-wrapp">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit?
+                                </p>
+                                <div class="arrew-img"></div>
+                            </div>
+                            <div
+                                class="five-section-mine__item-inf display__none"
+                            >
+                                Mi pharetra, tempor, arcu dolor tristique
+                                pharetra. Neque lobortis diam sed auctor
+                                porttitor. Ac senectus id et at odio cursus. At
+                                dolor ultricies cras aliquam etiam sit id
+                                aliquet.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <h4 class="point-title">Contacts</h4>
+                <div class="footer__head">
+                    <div class="footer__contact">
+                        <div>+1 702 234-56-54</div>
+                        <div>investment@en.net</div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li class="scril__Btn">Home</li>
+                            <li class="scril__Btn">About</li>
+                            <li class="scril__Btn">Investment</li>
+                            <li class="scril__Btn">FAQ</li>
+                            <li class="scril__Btn">Contacts</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__mine">GENERAL RISK WARNING</div>
+
+                <div class="footer__footer">
+                    <div class="footer__footer-wrapper">
+                        All investing involves risk
+                    </div>
+                </div>
+                <div class="footer__year">
+                    <img src="img/footer-c.svg" />
+                    2021
+                </div>
+            </footer>
+            <div class="five-section__back-first"></div>
+            <div class="five-section__back-second"></div>
+        </div>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/InvestmentAccounts.js"></script>
+</html>
